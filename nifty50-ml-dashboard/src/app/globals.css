@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e40af;
+  --color-bullish: #10b981;
+  --color-bearish: #ef4444;
+  --color-neutral-amber: #f59e0b;
+  --color-warning: #f97316;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #111827;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Monospace numbers utility */
+.font-mono-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Card hover animation */
+.card-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+/* Gradient backgrounds */
+.hero-gradient {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 25%, #f5f3ff 50%, #fdf2f8 75%, #fff7ed 100%);
+}
+
+/* Sector badge */
+.sector-badge {
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Disclaimer banner */
+.disclaimer-banner {
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  color: white;
+  font-size: 0.8125rem;
+  padding: 6px 16px;
+  text-align: center;
+}
+
+/* Feature bar animation */
+@keyframes grow {
+  from { width: 0; }
+}
+.animate-grow {
+  animation: grow 1s ease-out;
+}
+
+/* Tab active indicator */
+.tab-active {
+  border-bottom: 2px solid #2563eb;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Responsive chart container */
+.chart-container {
+  width: 100%;
+  min-height: 300px;
+}
+@media (min-width: 768px) {
+  .chart-container {
+    min-height: 400px;
+  }
+}
