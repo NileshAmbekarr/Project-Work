@@ -1,6 +1,6 @@
 # Nifty 50 Stock Price Direction Prediction — Complete Project Explanation
 
-> **Use this document for viva preparation, professor evaluations, or explaining the project to anyone from scratch.**
+<!-- > **Use this document for viva preparation, professor evaluations, or explaining the project to anyone from scratch.** -->
 
 ---
 

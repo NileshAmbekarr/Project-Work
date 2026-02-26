@@ -4,7 +4,7 @@
     "prediction_horizon_days": 60,
     "features_count": 14,
     "model_type": "Random Forest",
-    "generated_date": "2026-02-23 16:54:33"
+    "generated_date": "2026-02-26 19:36:48"
   },
   "data_summary": {
     "total_stocks": 49,
