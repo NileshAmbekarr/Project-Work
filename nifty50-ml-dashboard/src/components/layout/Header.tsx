@@ -57,7 +57,7 @@ export default function Header() {
                             </Link>
                         ))}
                         <a
-                            href="https://github.com"
+                            href="https://github.com/NileshAmbekarr/Project-Work.git"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-2 p-2 text-gray-500 hover:text-gray-900 transition-colors"

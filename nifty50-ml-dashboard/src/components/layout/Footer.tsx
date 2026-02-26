@@ -22,7 +22,7 @@ export default function Footer() {
                         <h3 className="text-white font-semibold mb-4">Resources</h3>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+                                <a href="https://github.com/NileshAmbekarr/Project-Work.git" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
                                     <Github size={14} /> GitHub Repository
                                 </a>
                             </li>
@@ -36,8 +36,8 @@ export default function Footer() {
                         <h3 className="text-white font-semibold mb-4">Contact</h3>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <a href="mailto:team@example.com" className="hover:text-white transition-colors flex items-center gap-1">
-                                    <Mail size={14} /> team@example.com
+                                <a href="mailto:std_nilesh.ambekar@aecc.ac.in" className="hover:text-white transition-colors flex items-center gap-1">
+                                    <Mail size={14} /> std_nilesh.ambekar@aecc.ac.in
                                 </a>
                             </li>
                             <li>
