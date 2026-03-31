@@ -1,10 +1,10 @@
 import { AlertTriangle, Database, Cpu, Target, BarChart3, Code, BookOpen, Clock, Users, GitBranch, TreePine, ArrowRight, Zap, Brain, Layers, TrendingUp, TrendingDown, CheckCircle, XCircle, Settings, Globe, Server } from 'lucide-react';
 
 const teamMembers = [
-    { name: 'Nilesh Ambekar', role: 'Team Lead', department: 'Information Technology', year: 'Final Year', avatar: 'NA' },
-    { name: 'Pavan Tour', role: 'Member', department: 'Information Technology', year: 'Final Year', avatar: 'PT' },
-    { name: 'Nitesh Chavan', role: 'Member', department: 'Information Technology', year: 'Final Year', avatar: 'NC' },
-    { name: 'Pranit Bodade', role: 'Member', department: 'Information Technology', year: 'Final Year', avatar: 'PB' },
+    { name: 'Nilesh Ambekar', role: 'Team Lead', department: 'Information Technology', year: 'Final Year', path: 'NA.jpeg' },
+    { name: 'Pavan Tour', role: 'Member', department: 'Information Technology', year: 'Final Year',  path: 'PT.jpeg' },
+    { name: 'Nitesh Chavan', role: 'Member', department: 'Information Technology', year: 'Final Year', path: 'NC.jpeg' },
+    { name: 'Pranit Bodade', role: 'Member', department: 'Information Technology', year: 'Final Year', path: 'PB.jpeg' },
 ];
 
 const features = [
@@ -661,7 +661,7 @@ data = yf.download(tickers, start="1999-01-01", end="2025-11-05")
                     {teamMembers.map((member) => (
                         <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-5 text-center card-hover">
                             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center mx-auto mb-3">
-                                <span className="text-lg font-bold text-white">{member.avatar}</span>
+                                <img  className= "rounded-full" src={member.path }></img>
                             </div>
                             <h4 className="font-semibold text-gray-900 text-sm">{member.name}</h4>
                             <p className="text-xs text-blue-600 font-medium mt-1">{member.role}</p>
