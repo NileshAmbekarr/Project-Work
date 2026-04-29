@@ -29,7 +29,7 @@ def copy_json_files():
 
 def split_predictions():
     """Split predictions CSV into per-stock JSON files."""
-    csv_path = os.path.join(UI_DATA_DIR, 'predictions_detailed.csv')
+    csv_path = os.path.join(UI_DATA_DIR, 'latest_predictions.csv')
     print(f"  Reading {csv_path}...")
     df = pd.read_csv(csv_path)
     print(f"  Total rows: {len(df)}")
